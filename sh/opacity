@@ -1,0 +1,9 @@
+#!/bin/sh
+
+killall conky
+conky &
+id1=$(xwininfo -root -tree | grep Conky -B 2 | head -1 | perl -p -e 's/^ *(0x.*?) .*$/$1/g')
+# id2=$(xwininfo -root -tree | grep Conky -B 2 | head -1 | perl -p -e 's/^ *(0x.*?) .*$/$1/g')
+transset-df -i $id1 0.75
+
+

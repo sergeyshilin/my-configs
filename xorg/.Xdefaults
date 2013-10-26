@@ -1,0 +1,62 @@
+URxvt*color0: #101010 
+URxvt*color1: #dc2f2f 
+URxvt*color2: #5ca84f 
+URxvt*color3: #cd8b00 
+URxvt*color4: #234F84 
+URxvt*color5: #817bbb 
+URxvt*color6: #52b1a2
+URxvt*color7: #d0d0d0 
+URxvt*color8: #242424 
+URxvt*color9: #f18983 
+URxvt*color10: #71e45e 
+URxvt*color11: #eaeb70 
+URxvt*color12: #2C6390 
+URxvt*color13: #b598ca 
+URxvt*color14: #84e9e8 
+URxvt*color15: #f0f0f0 
+URxvt*iconFile: /usr/share/pixmaps/lxterminal.xpm
+URxvt*geometry: 80x25
+URxvt.lineSpace: 0
+URxvt.letterSpace: 0
+URxvt.font:xft:Bitstream Vera Sans Mono:style=Regular:pixelsize=13
+URxvt.boldFont:xft:Bitstream Vera Sans Mono:style=Bold:pixelsize=13
+URxvt*saveLines: 3200
+URxvt*depth: 32
+URxvt.background: #161616
+URxvt*foreground: #D0D0D0
+URxvt*cursorColor: #D0D0D0
+URxvt*tintColor: #161616
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*cursorBlink: false
+URxvt*pointerBlank: false
+URxvt*perl-ext: tabbed
+URxvt.perl-lib: /home/snape/.config/urxvt/perl/
+URxvt.perl-ext-common: default,matcher,url-select,tabbedex
+URxvt.matcher.button: 1
+URxvt.urlLauncher: chromium-browser
+URxvt.tabbed.new-button: no
+URxvt.tabbed.tabbar-fg: 15
+URxvt.tabbed.tabbar-bg: 8
+URxvt.tabbed.tab-fg: 8
+URxvt.tabbed.tab-bg: 14
+URxvt.fading: 40  
+URxvt.shading: 100
+URxvt*scrollTtyOutput: False
+URxvt*scrollTtyKeypress: True
+URxvt*scrollWithBuffer: True
+URxvt*secondaryScroll: True
+URxvt.keysym.M-l: perl:url-select:select_next
+!URxvt.colorUL: #86a2be
+URxvt.underlineURLs: true
+!URxvt.underlineColor: yellow
+urxvt.keysym.M-bracedown: perl:tabbedex:new_tab
+urxvt.keysym.M-braceright: perl:tabbedex:next_tab
+urxvt.keysym.M-braceleft: perl:tabbedex:prev_tab
+URxvt.matcher.pattern.0: (?:https?:\\/\\/|ftp:\\/\\/|news:\\/\\/|mailto:|file:\\/\\/|\\bwww\\.)\n\
+                          [a-zA-Z0-9\\x{0410}-\\x{044F}\\-\\@;\\/?:&=%\\$_.+!*\\x27,~#]*\n\
+                          (\n\
+                            \\([a-zA-Z0-9\\x{0410}-\\x{044F}\\-\\@;\\/?:&=%\\$_.+!*\\x27,~#]*\\)| # Allow a pair of matched parentheses\n\
+                            i[a-zA-Z0-9\\x{0410}-\\x{044F}\\-\\@;\\/?:&=%\\$_+*~]  # exclude some trailing characters (heuristic)\n\
+                          )+
+

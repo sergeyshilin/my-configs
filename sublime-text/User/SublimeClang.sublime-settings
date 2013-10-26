@@ -1,0 +1,10 @@
+{
+"additional_language_options": 
+{
+  "c++" : []
+},
+"options":
+[
+  "-I/usr/include/c++/4.4"
+]
+}

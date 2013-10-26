@@ -1,0 +1,36 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"ASPComment",
+		"Autocomplete Javascript with Method Signature",
+		"CompleteSharp",
+		"CTags for PHP",
+		"Display Functions (Java)",
+		"DocBlockr",
+		"EclipseJavaFormatter",
+		"File Navigator",
+		"Folder List",
+		"Javap",
+		"JavaPropertiesEditor",
+		"JavaScriptNext - ES6 Syntax",
+		"JavaSetterGetter",
+		"Logs Colorize",
+		"Open Folder",
+		"Package Control",
+		"PHP Getters and Setters",
+		"PHP Namespace Command",
+		"Phpcs",
+		"PhpDoc",
+		"SideBarEnhancements",
+		"Six - Future JavaScript Syntax",
+		"SourceTree",
+		"SublimeClang",
+		"SublimeJava",
+		"SublimeLinter",
+		"SyncedSideBar",
+		"VintageEx",
+		"Xdebug"
+	]
+}

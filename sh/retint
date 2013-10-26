@@ -1,0 +1,4 @@
+#!/bin/sh
+killall tint2
+tint2 &
+exit 0

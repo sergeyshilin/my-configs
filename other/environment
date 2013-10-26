@@ -1,0 +1,3 @@
+# export JDK_HOME="/usr/lib/jvm/java-6-sun/"
+export JDK_HOME="/usr/java/jdk1.7.0_17/"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/lib/idea-12/bin:/usr/lib/netbeans-7/bin:/usr/java/jdk1.7.0_17/bin"

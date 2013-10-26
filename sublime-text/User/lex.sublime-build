@@ -1,0 +1,4 @@
+{
+	"cmd": ["flex", "$file"],
+ 	"selector": ["source.l", "source.lex", "source.flex"] 
+}

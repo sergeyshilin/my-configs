@@ -1,0 +1,38 @@
+# gui
+scgi_port = 127.0.0.1:5000
+encoding_list = UTF-8
+
+# Минимальное количество пиров на один торрент (если их будет меньше, программа будет пытаться увеличить их число до заданного)
+min_peers = 100
+min_peers_seed = 50
+
+# Максимальное количество активных отдаваемых торрентов
+max_uploads = 30
+
+# Максимальные скорости на загрузку и отдачу
+download_rate = 0
+upload_rate = 0
+
+# Корневая папка для скачиваемых файлов
+directory = /media/snape/torrent_downloads/loaded/
+session = /media/snape/torrent_downloads/unloaded/
+port_range = 6789-6789
+port_random = no
+check_hash = yes
+peer_exchange = yes
+check_hash = yes
+use_udp_trackers = yes
+encryption = allow_incoming,enable_retry,prefer_plaintext
+dht = auto
+
+schedule = watch_directory_1,5,5,"load_start=/media/snape/downloads/*.torrent,d.set_directory=/media/snape/torrent_downloads/loaded"
+
+# Завершение программы при нехватке свободного места
+schedule = low_diskspace,5,60,close_low_diskspace=500M
+
+# Убираем лимит на загрузку и отдачу с 2 часов ночи...
+# schedule = throttle_1,03:00:00,24:00:00,download_rate=0
+# schedule = throttle_2,03:00:00,24:00:00,upload_rate=0
+
+# ...до 8 утра.
+# schedule = throttle_3,08:00:00,24:00:00,enable_trackers=no
