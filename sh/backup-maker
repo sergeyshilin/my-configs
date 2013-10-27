@@ -1,0 +1,16 @@
+#!/bin/bash
+# Purpose: Make whole linux system backup
+# Author: Sergey Shilin <snape@liceum8.ru>
+# ---------------------------------------
+
+# Current day, month and year
+DATE="$(date +%d-%m-%Y)"
+
+# Archive name
+NAME=/mnt/usb/backups/debian_backup-$DATE.tar.gz 
+
+# Make a backup
+echo "Making a backup..."
+sleep 5
+tar -cpvzf $NAME --exclude=/proc --exclude=/sys --exclude=/dev/pts --exclude=/selinux --exclude=/media --exclude=/mnt --exclude-backups --exclude-caches-all /
+echo "Successfully done!"
